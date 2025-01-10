@@ -1,4 +1,4 @@
-import NavbarHome from '../components/NavbarHome';
+import Navbar from '../components/Navbar';
 import './globals.css';
 import './background.css';
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div id="stars2"></div>
             <div id="stars3"></div>
         </div>
-        <NavbarHome />
+        <Navbar />
         <main className="HomePage">{children}</main>
       </body>
     </html>
