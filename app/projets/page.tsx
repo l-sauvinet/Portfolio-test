@@ -17,30 +17,40 @@ export default function Projets() {
       { titre: 'Next.js', description: 'Framework pour le rendu côté serveur.', image: '/nextjs.png' },
       { titre: 'TypeScript', description: 'Superset de JavaScript avec typage.', image: '/typescript.png' }
     ];
+
+    const projects = [
+      { titre: 'Kalydian', description: '', image1: '', skill: 'Stimulus, PHP(Symfony), Docker, SQL, scss', url:'', lieu: 'Travail'},
+      { titre: 'Sentinel', description: '', image1: '', skill: 'React(TypeScript), css', url:'', lieu: 'Travail'},
+      { titre: 'Thorvald', description: '', image1: '', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'},
+      { titre: 'Portfolio', description: '', image1: '', skill: 'React + Next.js(TypeScript), css', url:'', lieu: 'Perso'},
+      { titre: 'PassGuard', description: '', image1: '', skill: 'React + Next.js(JavaScript), css, html', url:'', lieu: 'Perso'},
+      { titre: 'TodoList', description: '', image1: '', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'}
+    ];
   
     return (
       <section className="Skill-section">
-        <h1 className="Skills-title">Mes Competences</h1>
+        <h1 className="Skills-title">Competences :</h1>
         <div className="Skill-content">
           {skills.map((skill, index) => (
             <div key={index} className="skills">
               {/* Image de la compétence */}
               <img src={skill.image} alt={skill.titre} className="skill-image" />
               {/* Texte qui apparaît au survol */}
-              <h2 className="text-xl font-semibold Skill-text">{skill.titre}</h2>
+              <h2 className=" Skill-text">{skill.titre}</h2>
               <p className="Skill-description">{skill.description}</p>
             </div>
           ))}
         </div>
-        <h1 className="text-3xl font-bold mb-6">Mes Projets</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projets.map((projet, index) => (
-            <div
-              key={index}
-              className="border p-4 rounded-lg shadow hover:shadow-lg transition"
-            >
-              <h2 className="text-xl font-semibold">{projet.titre}</h2>
-              <p className="text-gray-600 mt-2">{projet.description}</p>
+        <h1 className="Project-title">Mes Projets</h1>
+        <div className="Project-content">
+          {projects.map((projet:any, index) => (
+            <div key={index} className="Projects">
+              <h2 className="project-title">{projet.titre}</h2>
+              <img src={projet.image} alt={projet.titre} className="project-image" />
+              {/* <p className="project-description">{projet.description}</p>
+              <p className="project-skill">{projet.skill}</p>
+              <p className="project-url">{projet.url}</p>
+              <p className="project-place">{projet.lieu}</p> */}
             </div>
           ))}
         </div>

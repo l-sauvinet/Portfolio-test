@@ -21,7 +21,6 @@ body {
   padding: 0;
   background-color: black;
   color: white;
-  overflow: hidden;
   user-select: none;
 }
 
@@ -246,6 +245,7 @@ body {
 }
 
 .Skill-content{
+  margin-top: 35px;
   padding-left: 200px;
   padding-right: 200px;
   width: 100%;
@@ -253,6 +253,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
+}
+
+.Skills-title{
+  padding-left: 200px;
+  width: 100%;
+  font-family: 'K2D', sans-serif;
+  font-size: 55px;
 }
 
 .skills {
@@ -296,18 +303,20 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Skills-title{
-  width: 100%;
-  font-weight: bold;
-  font-family: 'Rubik', sans-serif;
-  font-size: 30px;
-}
-
 .Skill-text{
   opacity: 0;
   position: absolute;
-
+  font-family: 'K2D', sans-serif;
+  font-weight: bold;
 }
+
+.skills:hover .Skill-text {
+  opacity: 1;
+  z-index: 4;
+  top: 10px;
+  left: 20px;
+}
+
 
 .Skill-description{
   opacity: 0;
@@ -319,13 +328,6 @@ body {
   z-index: 4;
   width: 100%;
   padding: 10px;
-}
-
-.skills:hover .Skill-text {
-  opacity: 1;
-  z-index: 4;
-  top: 10px;
-  left: 20px;
 }
 
 .skill-image {
@@ -341,6 +343,71 @@ body {
 
 .skills:hover .skill-image {
   border-radius: 25%;
+}
+
+
+
+
+.Project-title{
+  margin-top: 250px;
+  padding-left: 200px;
+  width: 100%;
+  font-family: 'K2D', sans-serif;
+  font-size: 55px;
+}
+
+.Project-content{
+  margin-top: 35px;
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Projects{
+  z-index: 3;
+  margin-top: 75px;
+  border-radius: 4%;
+  border: 2px solid white;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000 !important;
+  transition: transform 0.3s;
+}
+
+.Projects:hover{
+  transform: scale(1.1);
+}
+
+.project-image{
+
+}
+
+.project-title{
+  margin-top: -45px;
+  font-size: 25px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.project-description{
+  
+}
+
+.project-skill{
+  
+}
+
+.project-url{
+
+}
+
+.project-place{
+  
 }
 
 /*Projet + Skills FIN*/
