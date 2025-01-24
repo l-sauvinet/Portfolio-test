@@ -81,6 +81,7 @@ body {
   color:  white;
   font-size: 30px;
   height: 45px;
+  transform: scale(1);
 }
 
 .social-icons{
@@ -144,3 +145,202 @@ body {
 }
 
 /*HomePage FIN*/
+
+/*Contact*/
+
+.Contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.Contact-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.Contact-form button{
+  width: 20%;
+}
+
+.Contact-form div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.Contact-input-email{
+  width: 60%;
+  height: 45px;
+  border-radius: 25px;
+  padding: 15px;
+  color: black !important;
+}
+
+.Contact-input-object{
+  width: 50%;
+  height: 45px;
+  border-radius: 25px;
+  padding: 15px;
+  color: black !important;
+}
+
+.Contact-input-content{
+  width: 60%;
+  height: 200px;
+  border-radius: 25px;
+  padding: 15px;
+  color: black !important;
+}
+
+.Contact-btn-section{
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  gap: 25px !important;
+}
+
+.Contact-btn-cancel{
+  background-color: #333E5E;
+  height: 45px;
+  border-radius: 15px;
+  z-index: 9999;
+}
+
+.Contact-btn-cancel:hover{
+  background-color: transparent;
+  border: 3px solid #333E5E;
+}
+
+.Contact-btn-submit{
+  background-color: transparent;
+  border: 3px solid #333E5E;
+  height: 45px;
+  border-radius: 15px;
+  z-index: 9999;
+}
+
+.Contact-btn-submit:hover{
+  background-color: #333E5E;
+}
+
+/*Contact FIN*/
+
+/*Projet + Skills*/
+
+.Skill-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Skill-content{
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+
+.skills {
+  position: relative;
+  display: flex;
+  border-radius: 100%;
+  height: 175px;
+  width: 175px;
+  border: 2px solid white;
+  transition: 
+    transform 0.3s, 
+    color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+    border-radius 0.3s;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000000 !important;
+}
+
+.skills:hover {
+  border-radius: 25%;
+  transform: scale(1.08);
+  
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.skills:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Skills-title{
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+}
+
+.Skill-text{
+  opacity: 0;
+  position: absolute;
+
+}
+
+.Skill-description{
+  opacity: 0;
+  position: absolute;
+}
+
+.skills:hover .Skill-description {
+  opacity: 1;
+  z-index: 4;
+  width: 100%;
+  padding: 10px;
+}
+
+.skills:hover .Skill-text {
+  opacity: 1;
+  z-index: 4;
+  top: 10px;
+  left: 20px;
+}
+
+.skill-image {
+  position: relative;
+  z-index: 1;
+  border-radius: 100%;
+  transition: 
+    transform 0.3s, 
+    color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+    border-radius 0.3s;
+  
+  }
+
+.skills:hover .skill-image {
+  border-radius: 25%;
+}
+
+/*Projet + Skills FIN*/

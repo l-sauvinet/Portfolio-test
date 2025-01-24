@@ -10,6 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
+      <head>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      </head>
       <body>
         {/* Conteneur pour les étoiles */}
         <div id="star-container">

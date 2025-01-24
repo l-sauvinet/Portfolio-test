@@ -11,23 +11,6 @@ export default function Navbar() {
     { href: "/contact", label: "Contact", key: "contact" },
   ];
 
-  const orderedLinks = (() => {
-    if (pathname === "/contact") {
-      return [
-        links[1],
-        links[2],
-        links[0],
-      ];
-    } else if (pathname === "/projets") {
-      return [
-        links[2],
-        links[0],
-        links[1],
-      ];
-    }
-    return links;
-  })();
-
   return (
     <nav className="Navbar">
       <div className="Navbar-content">
@@ -36,7 +19,7 @@ export default function Navbar() {
           Sauvinet Lucas
         </div>
         <div className="Navbar-menu">
-          {orderedLinks.map((link) => (
+          {links.map((link) => (
             <Link
               key={link.key}
               href={link.href}
