@@ -300,7 +300,7 @@ body {
 }
 
 .skills:hover::after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.808);
 }
 
 .Skill-text{
@@ -370,22 +370,27 @@ body {
 .Projects{
   z-index: 3;
   margin-top: 75px;
-  border-radius: 4%;
-  border: 2px solid white;
+  border-radius: 7.5%;
   width: 35%;
+  height: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #000000 !important;
   transition: transform 0.3s;
+
 }
 
 .Projects:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .project-image{
-
+  height: 100%;
+  width: 100%;
+  border-radius: 7%;
+  margin-top: 7.5px;
 }
 
 .project-title{

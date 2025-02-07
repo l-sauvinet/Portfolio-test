@@ -19,12 +19,11 @@ export default function Projets() {
     ];
 
     const projects = [
-      { titre: 'Kalydian', description: '', image1: '', skill: 'Stimulus, PHP(Symfony), Docker, SQL, scss', url:'', lieu: 'Travail'},
-      { titre: 'Sentinel', description: '', image1: '', skill: 'React(TypeScript), css', url:'', lieu: 'Travail'},
-      { titre: 'Thorvald', description: '', image1: '', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'},
-      { titre: 'Portfolio', description: '', image1: '', skill: 'React + Next.js(TypeScript), css', url:'', lieu: 'Perso'},
-      { titre: 'PassGuard', description: '', image1: '', skill: 'React + Next.js(JavaScript), css, html', url:'', lieu: 'Perso'},
-      { titre: 'TodoList', description: '', image1: '', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'}
+      { titre: 'Kalydian', description: '', image1: '/kalydian-logo.png', skill: 'Stimulus, PHP(Symfony), Docker, SQL, scss', url:'', lieu: 'Travail'},
+      { titre: 'Assistium', description: '', image1: '/assistium-logo.png', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'},
+      { titre: 'Portfolio', description: '', image1: '/portfolio-logo.png', skill: 'React + Next.js(TypeScript), css', url:'', lieu: 'Perso'},
+      { titre: 'PassGuard', description: '', image1: '/passGuard-logo.png', skill: 'React + Next.js(JavaScript), css, html', url:'', lieu: 'Perso'},
+      { titre: 'TodoList', description: '', image1: '/todoList-logo.png', skill: 'JavaScript, css, html', url:'', lieu: 'Perso'}
     ];
   
     return (
@@ -46,7 +45,7 @@ export default function Projets() {
           {projects.map((projet:any, index) => (
             <div key={index} className="Projects">
               <h2 className="project-title">{projet.titre}</h2>
-              <img src={projet.image} alt={projet.titre} className="project-image" />
+              <img src={projet.image1} alt={projet.titre} className="project-image" />
               {/* <p className="project-description">{projet.description}</p>
               <p className="project-skill">{projet.skill}</p>
               <p className="project-url">{projet.url}</p>
