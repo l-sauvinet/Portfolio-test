@@ -12,6 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <head>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <link rel="icon" type="image/png" href="./logo-portfolio.png"></link>
       </head>
       <body>
         {/* Conteneur pour les étoiles */}
