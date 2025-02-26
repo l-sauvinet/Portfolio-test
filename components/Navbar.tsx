@@ -6,9 +6,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { href: "/projets", label: "Projets", key: "projects" },
-    { href: "/", label: "Accueil", key: "home" },
-    { href: "/contact", label: "Contact", key: "contact" },
+    { href: "/projets", label: "Project", key: "projects" },
+    { href: "/", label: "Home", key: "home" },
+    { href: "/skills", label: "Skill", key: "skills" },
   ];
 
   return (
@@ -32,6 +32,9 @@ export default function Navbar() {
           ))}
         </div>
         <div className="social-icons">
+          <a title="Envoyer un Email" href="/contact">
+            <img src="/email-icon.svg" alt="GitHub" />
+          </a>
           <a title="Lien vers GitHub" href="https://github.com/l-sauvinet">
             <img src="/gitHub-icon.svg" alt="GitHub" />
           </a>
