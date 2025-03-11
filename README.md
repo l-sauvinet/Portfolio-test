@@ -17,3 +17,7 @@ Ce projet est un portfolio personnel créé pour mettre en avant mes compétence
 **Sauvinet Lucas**
 
 Connectez-vous avec moi sur [LinkedIn](https://www.linkedin.com/in/lucas-sauvinet-3607162a4/) ou consultez mon [GitHub](https://github.com/l-sauvinet).
+
+## Prérequis
+- Avoir Node.js installer
+- executer la commande `npm i`
