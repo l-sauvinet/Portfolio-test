@@ -26,5 +26,7 @@ Connectez-vous avec moi sur [LinkedIn](https://www.linkedin.com/in/lucas-sauvine
 
 - npm run build
 - npm run start
+  
   OU
+  
 - npm run dev
