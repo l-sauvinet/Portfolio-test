@@ -21,3 +21,10 @@ Connectez-vous avec moi sur [LinkedIn](https://www.linkedin.com/in/lucas-sauvine
 ## Prérequis
 - Avoir Node.js installer
 - executer la commande `npm i`
+
+## Démarrer
+
+- npm run build
+- npm run start
+  OU
+- npm run dev
